@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-y6*i8mzx=0l_z03k3+=6(fiekfxitzvux@#sw493pask-_!fj@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://8a72ede7-a5c9-4a49-8047-39b3012b0aa4-dev.e1-us-east-azure.choreoapis.dev/chatbot/backend/v1.0', '*']
 
 
 # Application definition

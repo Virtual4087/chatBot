@@ -75,8 +75,8 @@ def event_stream(prompt):
         response = generate_gemini_response(prompt, link_contents if unique_urls else None)
         
         for chunk in response:
-
-            yield f"data: {chunk.text.replace('\n', '\\n')}\n\n"
+            text = chunk.text.replace('\n', '\\n')
+            yield f"data: {text}\n\n"
         yield "data: [DONE]\n\n"
     except Exception as e:
 
